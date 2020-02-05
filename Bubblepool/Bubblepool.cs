@@ -20,13 +20,13 @@ namespace Simhall
             this.dirt = 0;
         }
 
-        public void GetIn(Swimmer joiner)
+        public virtual void GetIn(Swimmer joiner)
         {
             this.people.Add(joiner);
             this.GetDirtier();
         }
 
-        public void getOut(Swimmer leaver)
+        public virtual void getOut(Swimmer leaver)
         {
             this.people.Remove(leaver);
             this.GetDirtier();
