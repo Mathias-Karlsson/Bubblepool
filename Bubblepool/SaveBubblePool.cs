@@ -14,7 +14,7 @@ namespace Simhall
 
         public int people;
 
-        public SaveBubblePool(int max) : base(max)
+        public SaveBubblePool(int max, string notification) : base(max)
         {
             notification = "SafeBubblePool cleaned itself automatically!";
         }
